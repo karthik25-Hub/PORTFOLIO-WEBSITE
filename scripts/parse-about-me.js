@@ -5,9 +5,9 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const workspaceRoot = path.resolve(__dirname, '../..');
+const workspaceRoot = path.resolve(__dirname, '..');
 const mdPath = path.join(workspaceRoot, 'about-me.md');
-const outPath = path.join(workspaceRoot, 'portfolio/src/data.js');
+const outPath = path.join(workspaceRoot, 'src/data.js');
 
 // Splits a string by comma, but ignores commas inside parentheses
 function splitByComma(str) {
