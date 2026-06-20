@@ -1,18 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Karthik Kantamneni — energy curve mark">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Karthik Kantamneni — clean energy mark">
   <!-- brand tile -->
   <rect width="64" height="64" rx="15" fill="#1C1B18"/>
 
-  <!-- faint area fill under the curve -->
-  <path d="M11 44 C19 44 23 40 31 32 C39 24 45 17 53 17 L53 49 L11 49 Z"
-        fill="#0F8A77" fill-opacity="0.16"/>
+  <!-- leaf: sustainability (teal) -->
+  <path d="M32 8 C44 16 47 37 32 56 C17 37 20 16 32 8 Z" fill="#0F8A77"/>
+  <!-- subtle leaf shading -->
+  <path d="M32 8 C44 16 47 37 32 56 C30 40 30 24 32 8 Z" fill="#0B6657" fill-opacity="0.45"/>
 
-  <!-- baseline (subtle grid nod) -->
-  <line x1="11" y1="49" x2="53" y2="49" stroke="#0F8A77" stroke-opacity="0.28" stroke-width="2" stroke-linecap="round"/>
-
-  <!-- energy / load curve -->
-  <path d="M11 44 C19 44 23 40 31 32 C39 24 45 17 53 17"
-        fill="none" stroke="#0F8A77" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-
-  <!-- clay peak dot -->
-  <circle cx="53" cy="17" r="5.5" fill="#C75B39"/>
+  <!-- lightning bolt: energy (clay) -->
+  <path d="M7 2 V13 H10 V22 L17 10 H13 L17 2 Z" fill="#C75B39"
+        transform="translate(11.6 11.6) scale(1.7)"/>
 </svg>
