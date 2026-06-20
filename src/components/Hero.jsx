@@ -52,7 +52,7 @@ export default function Hero() {
       <SectionGrid />
 
       <div className="relative z-10 max-w-4xl mx-auto px-7 md:px-20 flex flex-col items-center justify-center text-center py-12">
-        <h1 className="hero-title font-head font-bold text-[#1C1B18] leading-[0.96] tracking-tight mb-6 flex flex-nowrap justify-center items-baseline gap-x-3 uppercase whitespace-nowrap"
+        <h1 className="hero-title font-head font-bold text-[#1C1B18] leading-[0.96] tracking-tight mb-6 flex flex-wrap justify-center items-center gap-y-2 gap-x-3 uppercase"
             style={{ fontSize: 'clamp(22px, 6vw, 64px)', letterSpacing: '-0.03em' }}>
           <Shuffle text="KARTHIK" triggerOnLoad={true} triggerOnHover={true} duration={0.4} shuffleTimes={2} />
           <Shuffle text="KANTAMNENI" className="text-[#C75B39]" triggerOnLoad={true} triggerOnHover={true} duration={0.4} shuffleTimes={2} />

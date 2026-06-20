@@ -138,5 +138,5 @@ export default function SectionGrid({ dark = false }) {
     }
   }, [dark])
 
-  return <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" style={{ zIndex: 0 }} aria-hidden="true" />
+  return <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" style={{ zIndex: 0, pointerEvents: 'none' }} aria-hidden="true" />
 }

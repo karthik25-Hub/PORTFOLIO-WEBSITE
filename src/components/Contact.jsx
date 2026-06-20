@@ -95,7 +95,7 @@ export default function Contact() {
       <div className="relative z-10 max-w-6xl mx-auto px-7 md:px-20">
         
         <div 
-          className="rounded-2xl p-8 md:p-12 mb-12 max-w-2xl text-left"
+          className="rounded-2xl p-6 md:p-12 mb-12 max-w-2xl text-left"
           style={{
             background: '#1C1B18',
             border: '1px solid rgba(255, 255, 255, 0.07)',

@@ -31,7 +31,7 @@ export default function AboutMe() {
           
           {/* Bio info */}
           <div 
-            className="lg:col-span-7 rounded-2xl p-8 md:p-10"
+            className="lg:col-span-7 rounded-2xl p-6 md:p-10"
             style={{
               background: '#1C1B18',
               border: '1px solid rgba(255, 255, 255, 0.07)',
@@ -52,7 +52,7 @@ export default function AboutMe() {
 
           {/* Education timeline */}
           <div 
-            className="lg:col-span-5 text-left rounded-2xl p-8 md:p-10"
+            className="lg:col-span-5 text-left rounded-2xl p-6 md:p-10"
             style={{
               background: '#1C1B18',
               border: '1px solid rgba(255, 255, 255, 0.07)',
