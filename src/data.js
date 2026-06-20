@@ -18,7 +18,7 @@ export const person = {
   "email": "karthik29.work@gmail.com",
   "linkedin": "https://www.linkedin.com/in/karthik-kantamneni-0a318b296",
   "linkedinHandle": "karthik-kantamneni-0a318b296",
-  "github": null,
+  "github": "https://github.com/karthik25-Hub",
   "cv": "[link to your CV PDF — add when hosted]"
 };
 

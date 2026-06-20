@@ -20,7 +20,7 @@
 ## Contact
 - Email: karthik29.work@gmail.com
 - LinkedIn: https://www.linkedin.com/in/karthik-kantamneni-0a318b296
-- GitHub: [placeholder — profile not yet created]
+- GitHub: https://github.com/karthik25-Hub
 - CV: [link to your CV PDF — add when hosted]
 
 ## Education

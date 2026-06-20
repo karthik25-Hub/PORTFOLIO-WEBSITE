@@ -92,10 +92,10 @@ export default function Contact() {
     >
       <SectionGrid dark />
 
-      <div className="relative z-10 max-w-4xl mx-auto px-7">
+      <div className="relative z-10 max-w-6xl mx-auto px-7 md:px-20">
         
         <div 
-          className="rounded-2xl p-8 md:p-12 mb-12"
+          className="rounded-2xl p-8 md:p-12 mb-12 max-w-2xl text-left"
           style={{
             background: '#1C1B18',
             border: '1px solid rgba(255, 255, 255, 0.07)',
@@ -107,8 +107,8 @@ export default function Contact() {
               <p className="font-mono text-[11px] tracking-[0.12em] text-[#0F8A77] mb-5">// LET'S CONNECT</p>
             </Reveal>
             <h2
-              className="font-head font-bold text-white mb-4 tracking-tight uppercase"
-              style={{ fontSize: 'clamp(32px, 4vw, 56px)', letterSpacing: '-0.035em', lineHeight: 1.08 }}
+              className="font-head font-bold text-white mb-4 tracking-tight uppercase text-left"
+              style={{ fontSize: 'clamp(32px, 4.5vw, 56px)', letterSpacing: '-0.035em', lineHeight: 1.08 }}
             >
               <Shuffle text="GOT A PROJECT" delay={0.0} triggerOnHover={true} />
               <br />
@@ -126,7 +126,7 @@ export default function Contact() {
             <ContactLink
               href={`mailto:${person.email}`}
               label="email"
-              value={person.email}
+              value="Connect via Email"
               icon={
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.55)" strokeWidth="1.6">
                   <rect x="2" y="4" width="20" height="16" rx="2"/>
@@ -137,7 +137,7 @@ export default function Contact() {
             <ContactLink
               href={person.linkedin}
               label="linkedin"
-              value={person.linkedinHandle}
+              value="Connect on LinkedIn"
               icon={
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="rgba(255,255,255,0.55)">
                   <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
@@ -146,10 +146,9 @@ export default function Contact() {
               }
             />
             <ContactLink
-              href="#"
+              href={person.github}
               label="github"
-              value="coming soon"
-              dim
+              value="Connect on GitHub"
               icon={
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.55)" strokeWidth="1.6">
                   <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
@@ -161,7 +160,7 @@ export default function Contact() {
 
         {/* Footer line */}
         <p
-          className="font-mono text-[11px] mt-16 tracking-wide text-center"
+          className="font-mono text-[11px] mt-24 tracking-wide text-left"
           style={{ color: 'rgba(255,255,255,0.18)' }}
         >
           © 2025 Karthik Kantamneni · Padua, Italy
