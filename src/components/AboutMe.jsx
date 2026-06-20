@@ -33,11 +33,11 @@ export default function AboutMe() {
           <div 
             className="lg:col-span-7 rounded-2xl p-6 md:p-10"
             style={{
-              background: 'rgba(28, 27, 24, 0.45)',
-              backdropFilter: 'blur(12px)',
-              WebkitBackdropFilter: 'blur(12px)',
-              border: '1px solid rgba(255, 255, 255, 0.08)',
-              boxShadow: '0 8px 32px rgba(0, 0, 0, 0.2)'
+              background: 'rgba(28, 27, 24, 0.4)',
+              backdropFilter: 'blur(25px) saturate(120%)',
+              WebkitBackdropFilter: 'blur(25px) saturate(120%)',
+              border: '1px solid rgba(255, 255, 255, 0.12)',
+              boxShadow: '0 20px 40px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.12)'
             }}
           >
             <SectionTitle eyebrow="// ABOUT ME" color="#C75B39">
@@ -56,11 +56,11 @@ export default function AboutMe() {
           <div 
             className="lg:col-span-5 text-left rounded-2xl p-6 md:p-10"
             style={{
-              background: 'rgba(28, 27, 24, 0.45)',
-              backdropFilter: 'blur(12px)',
-              WebkitBackdropFilter: 'blur(12px)',
-              border: '1px solid rgba(255, 255, 255, 0.08)',
-              boxShadow: '0 8px 32px rgba(0, 0, 0, 0.2)'
+              background: 'rgba(28, 27, 24, 0.4)',
+              backdropFilter: 'blur(25px) saturate(120%)',
+              WebkitBackdropFilter: 'blur(25px) saturate(120%)',
+              border: '1px solid rgba(255, 255, 255, 0.12)',
+              boxShadow: '0 20px 40px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.12)'
             }}
           >
             <Reveal>

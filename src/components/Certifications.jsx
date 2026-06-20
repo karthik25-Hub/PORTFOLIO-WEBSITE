@@ -38,11 +38,11 @@ export default function Certifications() {
               delay={(i % 3) * 0.06}
               className="rounded-xl p-5"
               style={{ 
-                background: 'rgba(242, 235, 225, 0.35)', 
-                backdropFilter: 'blur(10px)',
-                WebkitBackdropFilter: 'blur(10px)',
-                border: '1px solid rgba(227, 216, 200, 0.6)',
-                boxShadow: '0 4px 20px rgba(28, 27, 24, 0.02)'
+                background: 'rgba(242, 235, 225, 0.3)', 
+                backdropFilter: 'blur(25px) saturate(120%)',
+                WebkitBackdropFilter: 'blur(25px) saturate(120%)',
+                border: '1px solid rgba(255, 255, 255, 0.45)',
+                boxShadow: '0 20px 40px rgba(28, 27, 24, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.5)'
               }}
             >
               <p className="font-sans font-medium text-[13px] text-[#1C1B18] mb-1.5 leading-snug uppercase">{c.name}</p>

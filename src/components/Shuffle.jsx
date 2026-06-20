@@ -35,6 +35,8 @@ const Shuffle = ({
   const containerRef = useRef(null)
   const [fontsLoaded, setFontsLoaded] = useState(false)
   const [isClient, setIsClient] = useState(false)
+  const animStateRef = useRef('idle') // 'idle', 'playing', 'completed'
+  const activeTlRef = useRef(null)
 
   useEffect(() => {
     let active = true
@@ -161,53 +163,74 @@ const Shuffle = ({
 
       const isVertical = shuffleDirection === 'up' || shuffleDirection === 'down'
       
-      // Calculate widths and heights dynamically after rendering
-      inners.forEach((inner) => {
-        const wrap = inner.parentElement
-        const ch = inner.querySelector('.shuffle-char')
-        if (!ch) return
+      // forward declaration so updateSizes can re-invoke play if resized mid-animation
+      let playAnimation = () => {}
 
-        const charRect = ch.getBoundingClientRect()
-        const w = charRect.width || 12 // fallback
-        const h = charRect.height || 18
-        
-        wrap.style.width = w + 'px'
-        wrap.style.height = isVertical ? h + 'px' : 'auto'
-        
-        const steps = parseFloat(inner.getAttribute('data-steps') || '2')
-        
-        let startX = 0, finalX = 0
-        let startY = 0, finalY = 0
+      const updateSizes = () => {
+        const isPlaying = animStateRef.current === 'playing'
+        const isCompleted = animStateRef.current === 'completed'
 
-        if (shuffleDirection === 'right') {
-          startX = -steps * w
-          finalX = 0
-        } else if (shuffleDirection === 'left') {
-          startX = 0
-          finalX = -steps * w
-        } else if (shuffleDirection === 'down') {
-          startY = -steps * h
-          finalY = 0
-        } else if (shuffleDirection === 'up') {
-          startY = 0
-          finalY = -steps * h
-        }
+        inners.forEach((inner) => {
+          const wrap = inner.parentElement
+          const ch = inner.querySelector('.shuffle-char')
+          if (!ch || !wrap) return
 
-        if (shuffleDirection === 'left' || shuffleDirection === 'right') {
-          gsap.set(inner, { x: startX, y: 0 })
+          wrap.style.width = ''
+          wrap.style.height = ''
+
+          const charRect = ch.getBoundingClientRect()
+          const w = charRect.width || 12
+          const h = charRect.height || 18
+          
+          wrap.style.width = w + 'px'
+          wrap.style.height = isVertical ? h + 'px' : 'auto'
+          
+          const steps = parseFloat(inner.getAttribute('data-steps') || '2')
+          
+          let startX = 0, finalX = 0
+          let startY = 0, finalY = 0
+
+          if (shuffleDirection === 'right') {
+            startX = -steps * w
+            finalX = 0
+          } else if (shuffleDirection === 'left') {
+            startX = 0
+            finalX = -steps * w
+          } else if (shuffleDirection === 'down') {
+            startY = -steps * h
+            finalY = 0
+          } else if (shuffleDirection === 'up') {
+            startY = 0
+            finalY = -steps * h
+          }
+
           inner.setAttribute('data-start-x', String(startX))
           inner.setAttribute('data-final-x', String(finalX))
-        } else {
-          gsap.set(inner, { x: 0, y: startY })
           inner.setAttribute('data-start-y', String(startY))
           inner.setAttribute('data-final-y', String(finalY))
+
+          if (!isPlaying) {
+            const currentX = isCompleted ? finalX : startX
+            const currentY = isCompleted ? finalY : startY
+            if (shuffleDirection === 'left' || shuffleDirection === 'right') {
+              gsap.set(inner, { x: currentX, y: 0 })
+            } else {
+              gsap.set(inner, { x: 0, y: currentY })
+            }
+          }
+
+          if (colorFrom && !isCompleted) inner.style.color = colorFrom
+          if (colorTo && isCompleted) inner.style.color = colorTo
+        })
+
+        if (isPlaying && activeTlRef.current) {
+          activeTlRef.current.kill()
+          playAnimation()
         }
+      }
 
-        if (colorFrom) inner.style.color = colorFrom
-      })
-
-      const play = () => {
-        // Reset strips back to start position before replaying
+      playAnimation = () => {
+        animStateRef.current = 'playing'
         inners.forEach((inner) => {
           if (shuffleDirection === 'left' || shuffleDirection === 'right') {
             const startX = parseFloat(inner.getAttribute('data-start-x') || '0')
@@ -223,12 +246,14 @@ const Shuffle = ({
           repeat: loop ? -1 : 0,
           repeatDelay: loop ? loopDelay : 0,
           onComplete: () => {
+            animStateRef.current = 'completed'
             if (!loop) {
               if (colorTo) gsap.set(inners, { color: colorTo })
               onShuffleComplete?.()
             }
           }
         })
+        activeTlRef.current = tl
 
         const addTween = (targets, at) => {
           const vars = {
@@ -275,26 +300,27 @@ const Shuffle = ({
         }
       }
 
-      // Initial trigger: either immediate or scroll-based
+      updateSizes()
+      window.addEventListener('resize', updateSizes)
+
       let scrollTriggerInstance = null
       if (triggerOnLoad) {
-        play()
+        playAnimation()
       } else {
         scrollTriggerInstance = ScrollTrigger.create({
           trigger: el,
           start: scrollTriggerStart,
           once: triggerOnce,
           onEnter: () => {
-            play()
+            playAnimation()
           }
         })
       }
 
-      // Hover trigger handler (always registered if enabled, regardless of triggerOnLoad)
       let hoverHandler = null
       if (triggerOnHover) {
         hoverHandler = () => {
-          play()
+          playAnimation()
         }
         el.addEventListener('mouseenter', hoverHandler)
       }
@@ -304,6 +330,7 @@ const Shuffle = ({
         if (hoverHandler) {
           el.removeEventListener('mouseenter', hoverHandler)
         }
+        window.removeEventListener('resize', updateSizes)
       }
     },
     {

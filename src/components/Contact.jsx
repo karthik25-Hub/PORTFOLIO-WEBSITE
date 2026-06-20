@@ -92,16 +92,16 @@ export default function Contact() {
     >
       <SectionGrid dark />
 
-      <div className="relative z-10 max-w-6xl mx-auto px-7 md:px-20 w-full">
+      <div className="relative z-10 max-w-6xl px-7 md:px-20 w-full">
         
         <div 
           className="rounded-2xl p-6 md:p-12 mb-12 max-w-2xl text-left"
           style={{
-            background: 'rgba(28, 27, 24, 0.45)',
-            backdropFilter: 'blur(12px)',
-            WebkitBackdropFilter: 'blur(12px)',
-            border: '1px solid rgba(255, 255, 255, 0.08)',
-            boxShadow: '0 8px 32px rgba(0, 0, 0, 0.2)'
+            background: 'rgba(28, 27, 24, 0.4)',
+            backdropFilter: 'blur(25px) saturate(120%)',
+            WebkitBackdropFilter: 'blur(25px) saturate(120%)',
+            border: '1px solid rgba(255, 255, 255, 0.12)',
+            boxShadow: '0 20px 40px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.12)'
           }}
         >
           <div className="mb-10">
