@@ -8,12 +8,12 @@
 - Role: MSc Energy Engineering student, University of Padova
 - Location: Padua, Italy
 - Tagline: Designing the systems behind clean power.
-- Short pitch: Energy Engineer specializing in battery energy storage systems (BESS), renewable integration, and electricity market dynamics. Completing an MSc in Energy & Nuclear Engineering (Oct 2026), focused on leveraging technical grid modeling and quantitative analysis to optimize sustainable energy assets.
+- Short pitch: Energy engineer working where the power system meets economics — battery storage (BESS), renewable integration, and electricity-market dynamics. Finishing an MSc in Energy & Nuclear Engineering (2026), I use grid modelling and quantitative analysis to turn energy data into decisions.
 
 ## Looking for
 - Internships / analyst / energy-engineer roles; open to EU institutional roles (e.g. EUIPO Pan-European Seal Traineeship)
 - Preference: English-speaking roles, northern Italy / EU
-- Available from: July 2026 (expected graduation)
+- Available from: October 2026 (expected graduation)
 
 ## Contact
 - Email: karthik29.work@gmail.com
@@ -31,26 +31,26 @@
 
 ### Professional roles
 1. **BURFUR — Team Member (Student Startup)** · Padua, Italy · Feb 2025 – Jun 2025
-   Accomplished: Designed business and product models for a student-led startup. Impact: Mentors and judges pitched with verified financial estimates and dynamic pricing approaches. Action: Conducted financial modeling, pricing estimations, and pitch preparation.
+   Accomplished: Built the business and product model for a student-led startup. Impact: Pitched to mentors and judges, backed by financial estimates and a dynamic pricing model. Action: Conducted financial modeling, pricing estimations, and pitch preparation.
 
 2. **LENOCC — Business & Operations Assistant** · Padua, Italy · Oct 2023 – May 2024
-   Accomplished: Coordinated procurement and supplier communication for eyewear sourcing. Impact: Delivered supplier comparison matrices and cost analysis for the European market. Action: Managed manufacturer specs and logistics with Asian suppliers.
+   Accomplished: Coordinated procurement and supplier communication for eyewear sourcing. Impact: Produced supplier-comparison matrices and cost analysis for the European market. Action: Managed manufacturer specs and logistics with Asian suppliers.
 
 ### Virtual experience / job simulations (Forage) — completed 2025
-- **APA Group — Engineering for New Energy**: Accomplished: Designed PV and battery safety layouts. Impact: Completed comprehensive Basis of Design documentation. Action: Simulated engineering workflows and layouts.
+- **APA Group — Engineering for New Energy**: Accomplished: Designed PV and battery-storage safety layouts. Impact: Completed comprehensive Basis of Design documentation. Action: Simulated engineering workflows and layouts.
 - **Siemens Mobility — Operations Industrial Engineer**: Accomplished: Redesigned assembly line layouts. Impact: Identified bottlenecks and proposed waste-reduction pathways. Action: Performed operations optimization and line analysis.
-- **Siemens Mobility — Commercial Project Manager**: Accomplished: Managed simulated light-rail budgets. Impact: Established WBS, KPIs, and EAC forecasting on a 100M+ scale. Action: Directed stakeholder reporting and budgeting.
+- **Siemens Mobility — Commercial Project Manager**: Accomplished: Managed simulated light-rail budgets. Impact: Built WBS, KPIs and EAC forecasting on a €100M+ project. Action: Directed stakeholder reporting and budgeting.
 
 ## Academic projects (accomplished -> impact -> action)
-1. **CAISO battery storage & electricity markets** — Accomplished: Identified three causal price channels for CAISO wholesale electricity prices. Impact: Ancillary-service price collapse (RegUp −64%, Spin −82%) and scarcity elimination (>$500/MWh spikes: 620 → 28). Action: Conducted econometric panel regressions on California's 2–13 GW battery buildout. Tools: Python, pandas, econometrics. Link: [add thesis/GitHub when ready]
+1. **CAISO battery storage & electricity markets** — Accomplished: Identified three causal price channels for CAISO wholesale electricity prices. Impact: Ancillary-service price collapse (RegUp −64%, Spin −82%) and scarcity elimination (>$500/MWh spikes: 620 → 28). Action: Ran econometric panel regressions across California's 2–13 GW battery build-out (CAISO data). Tools: Python, pandas, econometrics. Link: [add thesis/GitHub when ready]
 
-2. **Residential building energy audit** — Accomplished: Modelled and reduced energy consumption in a residential building. Impact: Proposed interventions with quantified KPIs and verified ROI analysis. Action: Validated model against actual utility bills using inverse methods. Tools: Inverse modelling, Excel.
+2. **Residential building energy audit** — Accomplished: Modelled and reduced energy consumption in a residential building. Impact: Identified energy-saving interventions with quantified KPIs and verified ROI. Action: Validated model against actual utility bills using inverse methods. Tools: Inverse modelling, Excel.
 
 3. **Carbon-neutral fuels strategy** — Accomplished: Designed a 100% fossil-fuel-free decarbonisation roadmap for a subtropical island. Impact: Delivered an actionable strategy with SWOT analysis and renewable integration benchmarks. Action: Collaborated in a multidisciplinary team on strategic planning. Tools: Strategic planning, SWOT.
 
 4. **PV plant design** — Accomplished: Maximised rooftop solar energy yield and grid support. Impact: Delivered complete system layout with optimised inverter sizing. Action: Simulated PVGIS solar coordinates and layouts. Tools: PVGIS, Excel.
 
-5. **Carbon footprint analysis** — Accomplished: Modelled commute emissions and environmental impact. Impact: Completed full lifecycle assessment (LCA) per IPCC 2021 and ReCiPe 2016 methods. Action: Performed simulation runs in SimaPro with Ecoinvent data. Tools: SimaPro, Ecoinvent.
+5. **Carbon footprint analysis** — Accomplished: Quantified commute emissions across a full life-cycle. Impact: Completed full lifecycle assessment (LCA) per IPCC 2021 and ReCiPe 2016 methods. Action: Performed simulation runs in SimaPro with Ecoinvent data. Tools: SimaPro, Ecoinvent.
 
 6. **CHP optimisation** — Accomplished: Optimised a residential cogeneration system. Impact: Projected efficiency savings, sensitivity analysis, and payback estimates. Action: Simulated combined heat and power integration in HOMER Pro. Tools: HOMER Pro.
 
@@ -65,8 +65,7 @@
 
 ### Energy & technical
 Energy systems modelling, building energy modelling, life-cycle assessment (LCA),
-photovoltaic system design, carbon footprint analysis, thermodynamics, power systems,
-heat transfer.
+photovoltaic system design, carbon footprint analysis, thermodynamics, heat transfer.
 
 ### Tools & software
 Python, pandas, Excel (PivotTables, PowerPivot, dashboards), PVGIS, HOMER Pro, SimaPro,

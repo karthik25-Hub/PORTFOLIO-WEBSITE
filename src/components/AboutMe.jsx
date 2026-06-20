@@ -45,9 +45,9 @@ export default function AboutMe() {
             </SectionTitle>
             <Reveal delay={0.12}>
               <p className="font-sans text-[15px] md:text-[16px] leading-[1.7] text-[rgba(255,255,255,0.65)] max-w-xl">
-                Master's candidate at <strong className="text-white font-medium">Università di Padova</strong> in Energy and Nuclear Engineering, combining technical depth in renewables, grid modelling and thermal systems with a business mindset shaped by startup experience and cross-functional teamwork.
+                Master's candidate in <strong className="text-white font-medium">Energy & Nuclear Engineering</strong> at <strong className="text-white font-medium">Università di Padova</strong>, pairing technical depth in renewables, grid modelling and thermal systems with a commercial mindset built through startup and cross-functional work. I like hard problems with a number at the end of them.
                 <br /><br />
-                Available from <strong className="text-white font-medium">July 2026</strong>. Open to roles in energy systems, analytics and EU institutional environments.
+                Available from <strong className="text-white font-medium">October 2026</strong>. Open to roles in energy systems, analytics and EU institutional environments.
               </p>
             </Reveal>
           </div>

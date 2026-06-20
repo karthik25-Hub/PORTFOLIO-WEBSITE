@@ -5,7 +5,7 @@ export const person = {
   "role": "MSc Energy Engineering student, University of Padova",
   "location": "Padua, Italy",
   "tagline": "Designing the systems behind clean power.",
-  "pitch": "Energy Engineer specializing in battery energy storage systems (BESS), renewable integration, and electricity market dynamics. Completing an MSc in Energy & Nuclear Engineering (Oct 2026), focused on leveraging technical grid modeling and quantitative analysis to optimize sustainable energy assets.",
+  "pitch": "Energy engineer working where the power system meets economics — battery storage (BESS), renewable integration, and electricity-market dynamics. Finishing an MSc in Energy & Nuclear Engineering (2026), I use grid modelling and quantitative analysis to turn energy data into decisions.",
   "tools": [
     "Python",
     "pandas",
@@ -14,7 +14,7 @@ export const person = {
     "HOMER Pro",
     "SimaPro"
   ],
-  "available": "July 2026",
+  "available": "October 2026",
   "email": "karthik29.work@gmail.com",
   "linkedin": "https://www.linkedin.com/in/karthik-kantamneni-0a318b296",
   "linkedinHandle": "karthik-kantamneni-0a318b296",
@@ -28,7 +28,7 @@ export const projects = [
     "title": "CAISO battery storage & electricity markets",
     "accomplished": "Identified three causal price channels for CAISO wholesale electricity prices.",
     "impact": "Ancillary-service price collapse (RegUp −64%, Spin −82%) and scarcity elimination (>$500/MWh spikes: 620 → 28).",
-    "action": "Conducted econometric panel regressions on California's 2–13 GW battery buildout.",
+    "action": "Ran econometric panel regressions across California's 2–13 GW battery build-out (CAISO data).",
     "tags": [
       "Python",
       "pandas",
@@ -40,7 +40,7 @@ export const projects = [
     "num": "02",
     "title": "Residential building energy audit",
     "accomplished": "Modelled and reduced energy consumption in a residential building.",
-    "impact": "Proposed interventions with quantified KPIs and verified ROI analysis.",
+    "impact": "Identified energy-saving interventions with quantified KPIs and verified ROI.",
     "action": "Validated model against actual utility bills using inverse methods.",
     "tags": [
       "Inverse modelling",
@@ -75,7 +75,7 @@ export const projects = [
   {
     "num": "05",
     "title": "Carbon footprint analysis",
-    "accomplished": "Modelled commute emissions and environmental impact.",
+    "accomplished": "Quantified commute emissions across a full life-cycle.",
     "impact": "Completed full lifecycle assessment (LCA) per IPCC 2021 and ReCiPe 2016 methods.",
     "action": "Performed simulation runs in SimaPro with Ecoinvent data.",
     "tags": [
@@ -103,8 +103,8 @@ export const experience = [
     "role": "Team Member (Student Startup)",
     "company": "BURFUR",
     "location": "Padua, Italy",
-    "accomplished": "Designed business and product models for a student-led startup.",
-    "impact": "Mentors and judges pitched with verified financial estimates and dynamic pricing approaches.",
+    "accomplished": "Built the business and product model for a student-led startup.",
+    "impact": "Pitched to mentors and judges, backed by financial estimates and a dynamic pricing model.",
     "action": "Conducted financial modeling, pricing estimations, and pitch preparation",
     "color": "clay"
   },
@@ -114,7 +114,7 @@ export const experience = [
     "company": "LENOCC",
     "location": "Padua, Italy",
     "accomplished": "Coordinated procurement and supplier communication for eyewear sourcing.",
-    "impact": "Delivered supplier comparison matrices and cost analysis for the European market.",
+    "impact": "Produced supplier-comparison matrices and cost analysis for the European market.",
     "action": "Managed manufacturer specs and logistics with Asian suppliers",
     "color": "teal"
   },
@@ -123,7 +123,7 @@ export const experience = [
     "role": "Engineering for New Energy (Virtual)",
     "company": "APA Group",
     "location": "Remote",
-    "accomplished": "Designed PV and battery safety layouts.",
+    "accomplished": "Designed PV and battery-storage safety layouts.",
     "impact": "Completed comprehensive Basis of Design documentation.",
     "action": "Simulated engineering workflows and layouts",
     "color": "faint"
@@ -144,7 +144,7 @@ export const experience = [
     "company": "Siemens Mobility",
     "location": "Remote",
     "accomplished": "Managed simulated light-rail budgets.",
-    "impact": "Established WBS, KPIs, and EAC forecasting on a 100M+ scale.",
+    "impact": "Built WBS, KPIs and EAC forecasting on a €100M+ project.",
     "action": "Directed stakeholder reporting and budgeting",
     "color": "faint"
   }
@@ -201,7 +201,6 @@ export const skills = {
     "photovoltaic system design",
     "carbon footprint analysis",
     "thermodynamics",
-    "power systems",
     "heat transfer"
   ],
   "tools": [

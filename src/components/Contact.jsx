@@ -119,7 +119,7 @@ export default function Contact() {
             </h2>
             <Reveal delay={0.35}>
               <p className="font-sans text-[15px] md:text-[16px] leading-relaxed max-w-md" style={{ color: 'rgba(255,255,255,0.45)' }}>
-                Open to internships, analyst roles and EU institutional opportunities from July 2026.
+                Open to energy and analytics roles across the EU from October 2026. Let's talk.
               </p>
             </Reveal>
           </div>
