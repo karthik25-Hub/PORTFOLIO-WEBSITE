@@ -33,8 +33,10 @@ export default function AboutMe() {
           <div 
             className="lg:col-span-7 rounded-2xl p-6 md:p-10"
             style={{
-              background: '#1C1B18',
-              border: '1px solid rgba(255, 255, 255, 0.07)',
+              background: 'rgba(28, 27, 24, 0.85)',
+              backdropFilter: 'blur(12px)',
+              WebkitBackdropFilter: 'blur(12px)',
+              border: '1px solid rgba(255, 255, 255, 0.08)',
               boxShadow: '0 8px 32px rgba(0, 0, 0, 0.2)'
             }}
           >
@@ -54,8 +56,10 @@ export default function AboutMe() {
           <div 
             className="lg:col-span-5 text-left rounded-2xl p-6 md:p-10"
             style={{
-              background: '#1C1B18',
-              border: '1px solid rgba(255, 255, 255, 0.07)',
+              background: 'rgba(28, 27, 24, 0.85)',
+              backdropFilter: 'blur(12px)',
+              WebkitBackdropFilter: 'blur(12px)',
+              border: '1px solid rgba(255, 255, 255, 0.08)',
               boxShadow: '0 8px 32px rgba(0, 0, 0, 0.2)'
             }}
           >

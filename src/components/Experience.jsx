@@ -66,11 +66,14 @@ export default function Experience() {
               <div
                 className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 rounded-xl p-6"
                 style={{
-                  background: '#FBF7F0',
-                  borderTop: '1px solid #E3D8C8',
-                  borderRight: '1px solid #E3D8C8',
-                  borderBottom: '1px solid #E3D8C8',
+                  background: 'rgba(251, 247, 240, 0.65)',
+                  backdropFilter: 'blur(10px)',
+                  WebkitBackdropFilter: 'blur(10px)',
+                  borderTop: '1px solid rgba(227, 216, 200, 0.6)',
+                  borderRight: '1px solid rgba(227, 216, 200, 0.6)',
+                  borderBottom: '1px solid rgba(227, 216, 200, 0.6)',
                   borderLeft: `3px solid ${accent[e.color] || accent.faint}`,
+                  boxShadow: '0 4px 20px rgba(28, 27, 24, 0.02)'
                 }}
               >
                 {/* meta */}

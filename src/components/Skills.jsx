@@ -43,7 +43,17 @@ function SkillBlock({ title, children }) {
   }, [])
 
   return (
-    <div ref={blockRef} className="rounded-xl p-5" style={{ background: '#FBF7F0', border: '1px solid #E3D8C8' }}>
+    <div 
+      ref={blockRef} 
+      className="rounded-xl p-5" 
+      style={{ 
+        background: 'rgba(251, 247, 240, 0.65)', 
+        backdropFilter: 'blur(10px)',
+        WebkitBackdropFilter: 'blur(10px)',
+        border: '1px solid rgba(227, 216, 200, 0.6)',
+        boxShadow: '0 4px 20px rgba(28, 27, 24, 0.02)'
+      }}
+    >
       <p className="font-mono text-[10.5px] tracking-[0.08em] text-[#0F8A77] mb-3 uppercase">{title}</p>
       {children}
     </div>

@@ -37,7 +37,13 @@ export default function Certifications() {
               key={i}
               delay={(i % 3) * 0.06}
               className="rounded-xl p-5"
-              style={{ background: '#F2EBE1', border: '1px solid #E3D8C8' }}
+              style={{ 
+                background: 'rgba(242, 235, 225, 0.6)', 
+                backdropFilter: 'blur(10px)',
+                WebkitBackdropFilter: 'blur(10px)',
+                border: '1px solid rgba(227, 216, 200, 0.6)',
+                boxShadow: '0 4px 20px rgba(28, 27, 24, 0.02)'
+              }}
             >
               <p className="font-sans font-medium text-[13px] text-[#1C1B18] mb-1.5 leading-snug uppercase">{c.name}</p>
               <p className="font-mono text-[11px] text-[#9A8F7E]">{c.org} · {c.date}</p>

@@ -97,8 +97,10 @@ export default function Contact() {
         <div 
           className="rounded-2xl p-6 md:p-12 mb-12 max-w-2xl text-left"
           style={{
-            background: '#1C1B18',
-            border: '1px solid rgba(255, 255, 255, 0.07)',
+            background: 'rgba(28, 27, 24, 0.85)',
+            backdropFilter: 'blur(12px)',
+            WebkitBackdropFilter: 'blur(12px)',
+            border: '1px solid rgba(255, 255, 255, 0.08)',
             boxShadow: '0 8px 32px rgba(0, 0, 0, 0.2)'
           }}
         >
