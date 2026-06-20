@@ -30,12 +30,19 @@ export default function AboutMe() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
           
           {/* Bio info */}
-          <div className="lg:col-span-7">
+          <div 
+            className="lg:col-span-7 rounded-2xl p-8 md:p-10"
+            style={{
+              background: '#1C1B18',
+              border: '1px solid rgba(255, 255, 255, 0.07)',
+              boxShadow: '0 8px 32px rgba(0, 0, 0, 0.2)'
+            }}
+          >
             <SectionTitle eyebrow="// ABOUT ME" color="#C75B39">
               <Shuffle text="ENERGY ENGINEER.<br />CURIOUS ANALYST." triggerOnHover={true} />
             </SectionTitle>
             <Reveal delay={0.12}>
-              <p className="font-sans text-[15px] md:text-[16px] leading-[1.7] text-[rgba(255,255,255,0.6)] max-w-xl">
+              <p className="font-sans text-[15px] md:text-[16px] leading-[1.7] text-[rgba(255,255,255,0.65)] max-w-xl">
                 Master's candidate at <strong className="text-white font-medium">Università di Padova</strong> in Energy and Nuclear Engineering, combining technical depth in renewables, grid modelling and thermal systems with a business mindset shaped by startup experience and cross-functional teamwork.
                 <br /><br />
                 Available from <strong className="text-white font-medium">July 2026</strong>. Open to roles in energy systems, analytics and EU institutional environments.
@@ -44,7 +51,14 @@ export default function AboutMe() {
           </div>
 
           {/* Education timeline */}
-          <div className="lg:col-span-5 text-left">
+          <div 
+            className="lg:col-span-5 text-left rounded-2xl p-8 md:p-10"
+            style={{
+              background: '#1C1B18',
+              border: '1px solid rgba(255, 255, 255, 0.07)',
+              boxShadow: '0 8px 32px rgba(0, 0, 0, 0.2)'
+            }}
+          >
             <Reveal>
               <p className="font-mono text-[11px] tracking-[0.12em] text-[#0F8A77] mb-5 uppercase">// EDUCATION</p>
             </Reveal>
@@ -55,7 +69,7 @@ export default function AboutMe() {
                   delay={i * 0.08}
                   as="li"
                   className="flex gap-4 py-4"
-                  style={{ borderTop: '1px solid rgba(255,255,255,0.12)' }}
+                  style={{ borderTop: i > 0 ? '1px solid rgba(255,255,255,0.08)' : 'none' }}
                 >
                   <div className="font-mono text-[11px] pt-0.5 whitespace-nowrap min-w-[72px] text-[#9A8F7E]">
                     {e.period}
