@@ -167,7 +167,7 @@ export default function Contact() {
         style={{ color: 'rgba(255,255,255,0.18)' }}
       >
         © 2025 Karthik Kantamneni · Padua, Italy ·{' '}
-        <a href="https://icons8.com/icon/4480/leaf" target="_blank" rel="noopener noreferrer" className="underline-offset-2 hover:underline">Leaf</a>
+        <a href="https://icons8.com/icon/KSsv4cKgUzqR/leaf" target="_blank" rel="noopener noreferrer" className="underline-offset-2 hover:underline">Leaf</a>
         {' '}icon by{' '}
         <a href="https://icons8.com" target="_blank" rel="noopener noreferrer" className="underline-offset-2 hover:underline">Icons8</a>
       </p>
