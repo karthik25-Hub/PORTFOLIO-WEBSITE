@@ -1,13 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Karthik Kantamneni — clean energy mark">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Karthik Kantamneni — leaf mark">
   <!-- brand tile -->
   <rect width="64" height="64" rx="15" fill="#1C1B18"/>
-
-  <!-- leaf: sustainability (teal) -->
+  <!-- leaf body -->
   <path d="M32 8 C44 16 47 37 32 56 C17 37 20 16 32 8 Z" fill="#0F8A77"/>
-  <!-- subtle leaf shading -->
-  <path d="M32 8 C44 16 47 37 32 56 C30 40 30 24 32 8 Z" fill="#0B6657" fill-opacity="0.45"/>
-
-  <!-- lightning bolt: energy (clay) -->
-  <path d="M7 2 V13 H10 V22 L17 10 H13 L17 2 Z" fill="#C75B39"
-        transform="translate(11.6 11.6) scale(1.7)"/>
+  <!-- shaded half for depth -->
+  <path d="M32 8 C44 16 47 37 32 56 C31 40 31 24 32 8 Z" fill="#0B6657" fill-opacity="0.45"/>
+  <!-- midrib vein -->
+  <path d="M32 13 L32 51" stroke="#0B6657" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
 </svg>
