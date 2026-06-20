@@ -5,7 +5,7 @@ export const person = {
   "role": "MSc Energy Engineering student, University of Padova",
   "location": "Padua, Italy",
   "tagline": "Designing the systems behind clean power.",
-  "pitch": "Master's candidate in Energy Engineering — combining technical depth in renewables, grid modelling and thermal systems with a business mindset shaped by real startup experience and leadership development.",
+  "pitch": "Energy Engineer specializing in battery energy storage systems (BESS), renewable integration, and electricity market dynamics. Completing an MSc in Energy & Nuclear Engineering (Oct 2026), focused on leveraging technical grid modeling and quantitative analysis to optimize sustainable energy assets.",
   "tools": [
     "Python",
     "pandas",

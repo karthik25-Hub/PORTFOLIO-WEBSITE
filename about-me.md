@@ -8,9 +8,7 @@
 - Role: MSc Energy Engineering student, University of Padova
 - Location: Padua, Italy
 - Tagline: Designing the systems behind clean power.
-- Short pitch: Master's candidate in Energy Engineering — combining technical depth in
-  renewables, grid modelling and thermal systems with a business mindset shaped by real
-  startup experience and leadership development.
+- Short pitch: Energy Engineer specializing in battery energy storage systems (BESS), renewable integration, and electricity market dynamics. Completing an MSc in Energy & Nuclear Engineering (Oct 2026), focused on leveraging technical grid modeling and quantitative analysis to optimize sustainable energy assets.
 
 ## Looking for
 - Internships / analyst / energy-engineer roles; open to EU institutional roles (e.g. EUIPO Pan-European Seal Traineeship)
