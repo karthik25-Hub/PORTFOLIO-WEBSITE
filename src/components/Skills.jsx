@@ -47,7 +47,7 @@ function SkillBlock({ title, children }) {
       ref={blockRef} 
       className="rounded-xl p-5" 
       style={{ 
-        background: 'rgba(251, 247, 240, 0.65)', 
+        background: 'rgba(251, 247, 240, 0.35)', 
         backdropFilter: 'blur(10px)',
         WebkitBackdropFilter: 'blur(10px)',
         border: '1px solid rgba(227, 216, 200, 0.6)',

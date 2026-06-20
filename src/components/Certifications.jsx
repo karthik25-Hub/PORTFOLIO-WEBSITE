@@ -38,7 +38,7 @@ export default function Certifications() {
               delay={(i % 3) * 0.06}
               className="rounded-xl p-5"
               style={{ 
-                background: 'rgba(242, 235, 225, 0.6)', 
+                background: 'rgba(242, 235, 225, 0.35)', 
                 backdropFilter: 'blur(10px)',
                 WebkitBackdropFilter: 'blur(10px)',
                 border: '1px solid rgba(227, 216, 200, 0.6)',

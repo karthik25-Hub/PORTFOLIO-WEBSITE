@@ -16,9 +16,9 @@
   max-width: 100%;
   padding: 1.5em;
   border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.35);
   /* frosted glass on the warm sand background */
-  background: rgba(255, 255, 255, 0.42);
+  background: rgba(255, 255, 255, 0.22);
   -webkit-backdrop-filter: blur(14px) saturate(120%);
   backdrop-filter: blur(14px) saturate(120%);
   box-shadow: 0 4px 24px rgba(28, 27, 24, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.6);
@@ -34,9 +34,9 @@
 
 .magic-bento-card:hover {
   transform: translateY(-3px);
-  background: rgba(255, 255, 255, 0.58);
+  background: rgba(255, 255, 255, 0.38);
   box-shadow: 0 12px 36px rgba(28, 27, 24, 0.10), inset 0 1px 0 rgba(255, 255, 255, 0.7);
-  border-color: rgba(255, 255, 255, 0.8);
+  border-color: rgba(255, 255, 255, 0.55);
 }
 
 .magic-bento-card__header {

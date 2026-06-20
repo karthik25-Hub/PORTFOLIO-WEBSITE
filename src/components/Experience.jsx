@@ -66,7 +66,7 @@ export default function Experience() {
               <div
                 className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 rounded-xl p-6"
                 style={{
-                  background: 'rgba(251, 247, 240, 0.65)',
+                  background: 'rgba(251, 247, 240, 0.35)',
                   backdropFilter: 'blur(10px)',
                   WebkitBackdropFilter: 'blur(10px)',
                   borderTop: '1px solid rgba(227, 216, 200, 0.6)',

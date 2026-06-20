@@ -88,16 +88,16 @@ export default function Contact() {
     <section
       ref={containerRef}
       id="contact"
-      className="relative w-full min-h-screen bg-[#141310] py-24 md:py-36"
+      className="relative w-full min-h-screen bg-[#141310] pt-24 pb-12 md:pt-36 md:pb-16 flex flex-col justify-between"
     >
       <SectionGrid dark />
 
-      <div className="relative z-10 max-w-6xl mx-auto px-7 md:px-20">
+      <div className="relative z-10 max-w-6xl mx-auto px-7 md:px-20 w-full flex-1 flex flex-col justify-between">
         
         <div 
           className="rounded-2xl p-6 md:p-12 mb-12 max-w-2xl text-left"
           style={{
-            background: 'rgba(28, 27, 24, 0.85)',
+            background: 'rgba(28, 27, 24, 0.45)',
             backdropFilter: 'blur(12px)',
             WebkitBackdropFilter: 'blur(12px)',
             border: '1px solid rgba(255, 255, 255, 0.08)',
@@ -162,7 +162,7 @@ export default function Contact() {
 
         {/* Footer line */}
         <p
-          className="font-mono text-[11px] mt-24 tracking-wide text-left"
+          className="font-mono text-[11px] tracking-wide text-left"
           style={{ color: 'rgba(255,255,255,0.18)' }}
         >
           © 2025 Karthik Kantamneni · Padua, Italy
